@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management App</title>
+     <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h3>Hotel Management Dashboard</h3>
+    </header>
+
+    <section id="properties">
+        <h1>Welcome Back IK!</h1>
+        <p>Here's a quick overview of your properties.</p>
+        <div class="slider-container">
+            <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="property-card">
+                    <img src="img/antila.jpg" alt="Property A">
+                    <p><strong>Antilla Apartments & Suits</strong></p>
+                    <p>5 rooms available</p>
+                </div>
+                <div class="property-card">
+                    <img src="img/Lidds.jpg" alt="Property B">
+                    <p><strong>Lidds Apartments</strong></p>
+                    <p>3 rooms available</p>
+                </div>
+                <!-- Add more property cards here -->
+            </div>
+            <button class="next" onclick="moveSlider(1)">&#10095;</button>
+        </div>
+    </section>
+    
+
+    <section id="bookings">
+        <h2>Current Bookings</h2>
+        <div class="booking">
+            <p><strong>Booking #1234</strong></p>
+            <p>Check-in: Today, 2 guests</p>
+        </div>
+        <div class="booking">
+            <p><strong>Booking #1235</strong></p>
+            <p>Check-in: Tomorrow, 1 guest</p>
+        </div>
+    </section>
+
+    <section id="notifications">
+        <h2>Notifications</h2>
+        <div class="notification">
+            <p>📩 New message from Property A</p>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-building"></i>
+                        <span>Properties</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Bookings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="home.js"></script>
+
+</body>
+</html>

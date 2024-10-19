@@ -1,0 +1,137 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  /* font-weight: bold; */
+  text-align: left;
+}
+
+p {
+  color: #777;
+  text-align: left;
+}
+
+#properties, #bookings, #notifications {
+  /* background-color: #fff; */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*PROPERTIES*/
+#properties {
+  padding: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.property-card {
+  flex: 0 0 80%;
+  margin-right: 20px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px; /* Consistent height for all images */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Styling for the Previous and Next buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* .prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+
+.booking, .notification {
+  margin-bottom: 15px;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer nav ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+}
+
+footer nav ul li a i {
+  font-size: 20px; /* Icon size */
+  margin-bottom: 5px; /* Space between icon and text */
+}
+
+footer nav ul li a.active {
+  font-weight: bold;
+  color: #000;
+}
+
+footer nav ul li a:hover {
+  color: #777;
+}
