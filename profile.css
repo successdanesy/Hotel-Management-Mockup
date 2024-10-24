@@ -152,17 +152,6 @@ input:checked + .slider:before {
     background-color: #0056b3;
 }
 
-/* Fade-in Animation */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn ease 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
 
 /* Footer styling */
 footer {
