@@ -1,0 +1,211 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.header-icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    color: #666;
+    cursor: pointer;
+}
+
+/* User Profile Information */
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #444;
+}
+
+.account-info h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.account-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Settings styling */
+.settings h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+/* Change Password Button */
+.change-password-btn {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.change-password-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    text-align: center;
+}
+
+footer nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a i {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+footer nav ul li a:hover {
+    color: #007bff;
+}
+
+footer nav ul li a.active {
+    color: #007bff;
+}

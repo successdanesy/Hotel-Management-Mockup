@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    /* background-color: #fff; */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .actions i {
+    font-size: 20px;
+}
+
+.date-range, .monthly-overview, .financial-report {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Date Range Styling */
+.date-range .range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.range label {
+    font-size: 14px;
+    color: #333;
+}
+
+.range input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Monthly Overview Tabs */
+.monthly-overview .tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.monthly-overview .tab {
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.tab:not(.active):hover {
+    background-color: #ddd;
+}
+
+/* Report Section Styling */
+.financial-report .report-section {
+    margin-bottom: 20px;
+}
+
+.financial-report .report-section h2 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.financial-report .report-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.report-item:last-child {
+    border-bottom: none;
+}
+
+.report-item span {
+    font-size: 14px;
+}
+
+.report-item .amount {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.export-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.generate-btn {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.export-btn i, .generate-btn i {
+    margin-right: 5px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

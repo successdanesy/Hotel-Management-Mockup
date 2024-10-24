@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button and Header Icons -->
+        <header>
+            <a href="home.html" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+            <div class="header-icons">
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-info-circle"></i>
+            </div>
+        </header>
+
+        <!-- User Profile Information Section -->
+        <section class="profile-info">
+            <h1>User Profile</h1>
+            <div class="account-info">
+                <h2>Account Information</h2>
+                <p><strong>Name:</strong> admin</p>
+                <p><strong>Email:</strong> admin@example.com</p>
+            </div>
+
+            <!-- Settings Section -->
+            <div class="settings">
+                <h2>Settings</h2>
+                <div class="setting-item">
+                    <span>Receive Notifications</span>
+                    <label class="switch">
+                        <input type="checkbox" id="notifications-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span>Enable Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Change Password Button -->
+        <button class="change-password-btn">Change Password</button>
+  
+
+    <!-- `log Out Button -->
+    <a href="index.html">
+    <button class="change-password-btn">Log Out</button>
+</a>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="active">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="profile.js"></script>
+</body>
+</html>
